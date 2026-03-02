@@ -1,3 +1,14 @@
+<p align="center">
+  <img src="railx-logo.png" width="180">
+</p>
+
+<h1 align="center">BVDU-RailX</h1>
+
+<p align="center"><b>Multi-line Rail Network Simulation & Routing Engine</b></p>
+
+<p align="center"><i>Speed. Distance. Unified.</i></p>
+
+---
 # 🚆 BVDU-RailX
 
 Multi-line rail network simulation and routing engine built in C.
