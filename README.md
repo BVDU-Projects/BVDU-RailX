@@ -18,7 +18,7 @@ A modular, high-performance C-based railway routing, timetable, and interactive 
 
 ## 🚀 System Status
 
-✅ **Version 1.0 — Core Engine Complete**  
+✅ **Core Engine Complete**  
 Fully functional modular system with pathfinding, multi-line schedules, real-time seat matrices, and PNR ticket reservations.
 
 ---
@@ -84,16 +84,17 @@ The pathfinding engine calculates optimal travel routes across the network using
 
 $$T_{\text{new}} = T_{u} + T_{\text{edge}} + T_{\text{transfer}}$$
 
-* $T_{u}$: Total accumulated travel time to current station $u$[span_4](start_span)[span_4](end_span).
-* $T_{\text{edge}}$: Travel time weight for the specific edge connecting station $u$ to station $v$[span_5](start_span)[span_5](end_span).
-* $T_{\text{transfer}}$: Line transfer penalty of $+10 \text{ minutes}$ applied when switching lines at interchange hubs[span_6](start_span)[span_6](end_span).
+* **$T_{u}$**: Total accumulated travel time to current station $u$[span_4](start_span)[span_4](end_span).
+* **$T_{\text{edge}}$**: Travel time weight for the specific edge connecting station $u$ to station $v$[span_5](start_span)[span_5](end_span).
+* **$T_{\text{transfer}}$**: Line transfer penalty of $+10\text{ minutes}$ applied when switching lines at interchange hubs[span_6](start_span)[span_6](end_span).
 
 ### 2. Dynamic Fare Pricing
 Ticket pricing is computed using a combination of distance, travel time, and service tier surcharges[span_7](start_span)[span_7](end_span):
 
-$$\text{Fare} = \text{Base Fee (\$20)} + (\text{Distance in km} \times 0.30) + (\text{Duration in Mins} \times 0.05)$$
+$$\text{Fare} = \text{Base Fee} + (\text{Distance in km} \times 0.30) + (\text{Duration in Mins} \times 0.05)$$
 
-* **Fast Express Premium**: Fast Express services incur an additional $20\%$ surcharge on the total calculated fare[span_8](start_span)[span_8](end_span).
+* **Base Fee**: Standard starting fee ($20)[span_8](start_span)[span_8](end_span).
+* **Fast Express Premium**: Fast Express services incur an additional $20\%$ surcharge on the total calculated fare[span_9](start_span)[span_9](end_span).
 
 ---
 
