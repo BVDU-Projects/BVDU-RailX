@@ -1,0 +1,21 @@
+# Compiled binaries & executables
+railx
+railx.exe
+*.out
+a.out
+*.exe
+
+# Intermediate object files
+*.o
+src/*.o
+*.obj
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS metadata files
+.DS_Store
+Thumbs.db
