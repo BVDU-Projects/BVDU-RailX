@@ -1,0 +1,71 @@
+========================================================================
+                      BVDU-RAILX SYSTEM STATIONS DIRECTORY
+========================================================================
+
+--- ⬛ BLACK LINE (Line 1: Residential Commuter Corridor - 25 Stations) ---
+ 01. Pinegrove West         [⚡ MAJOR HUB / Terminus]
+ 02. Oakwood Terrace        [Local Station]
+ 03. Willowbrook Gardens    [Local Station]
+ 04. Cedarwood Village      [Local Station]
+ 05. Amber Hill Heights     [⚡ MAJOR HUB]
+ 06. Meadowvale Green       [Local Station]
+ 07. Silver Stream          [Local Station]
+ 08. Maplewood Valley       [Local Station]
+ 09. Glenwood Crossing      [⚡ MAJOR HUB - Interchange: Black <-> White]
+ 10. Rosewood Crest         [Local Station]
+ 11. Fairway Park           [Local Station]
+ 12. Sun Valley             [Local Station]
+ 13. Nexus Central          [⚡ MAJOR HUB - Central Common Interchange]
+ 14. Harmony Heights        [Local Station]
+ 15. Brookside Lane         [Local Station]
+ 16. Crestview Manor        [Local Station]
+ 17. Highland Park          [⚡ MAJOR HUB]
+ 18. Springdale Green       [Local Station]
+ 19. Cloverdale Ridge       [Local Station]
+ 20. Parkview East          [Local Station]
+ 21. Verdant Valley         [⚡ MAJOR HUB]
+ 22. Fernwood Ridge         [Local Station]
+ 23. Sunnyvale Meadows      [Local Station]
+ 24. Timberland Springs     [Local Station]
+ 25. Ironwood Park          [⚡ MAJOR HUB - Interchange: Black <-> Grey]
+
+--- ⬜ WHITE LINE (Line 2: Commercial Business District - 9 Stations) ---
+ 01. Vanguard Towers        [⚡ MAJOR HUB / Terminus]
+ 02. Apex Plaza             [Commercial Station]
+ 03. Silicon Heights        [⚡ MAJOR HUB]
+ 04. Glenwood Crossing      [⚡ MAJOR HUB - Interchange: White <-> Black]
+ 05. Commerce Square        [Commercial Station]
+ 06. Nexus Central          [⚡ MAJOR HUB - Central Common Interchange]
+ 07. Crystal District       [Commercial Station]
+ 08. Trade Gate Plaza       [Commercial Station]
+ 09. Horizon Trade Port     [⚡ MAJOR HUB / Port Terminus]
+
+--- 🩶 GREY LINE (Line 3: Long-Distance Express & Freight - 16 Stations) ---
+ 01. Titan Freight Harbor   [⚡ MAJOR HUB / Deepwater Port Terminus]
+ 02. Iron Gate Depot        [Freight Station]
+ 03. Steel Valley Yard      [⚡ MAJOR HUB / Industrial]
+ 04. Ironwood Park          [⚡ MAJOR HUB - Interchange: Grey <-> Black]
+ 05. Summit Ridge Outpost   [Waypoint / Refueling Stop]
+ 06. Badland Gap            [Waypoint]
+ 07. Nexus Central          [⚡ MAJOR HUB - Central Common Interchange]
+ 08. Midland Junction       [Passing Loop / Freight]
+ 09. Frontier Fortress      [⚡ MAJOR HUB / Regional]
+ 10. Canyon Creek Crossing  [Passing Loop]
+ 11. Northgate Terminus     [⚡ MAJOR HUB / Regional Terminus]
+ 12. Frost Valley Reach     [Waypoint]
+ 13. Vanguard Citadel       [⚡ MAJOR HUB / Regional]
+ 14. Outland Basin          [Waypoint]
+ 15. Borderland Pass        [Customs & Freight Yard]
+ 16. Aetheria Far West      [⚡ MAJOR HUB / Far Western Terminus]
+
+========================================================================
+🔁 KEY INTERCHANGE JUNCTIONS (Line Transfer Points)
+========================================================================
+ • Nexus Central      : Central Common Hub connecting ALL 3 LINES (Black <-> White <-> Grey)
+ • Glenwood Crossing  : Transfer point between BLACK LINE and WHITE LINE
+ • Ironwood Park      : Transfer point between BLACK LINE and GREY LINE
+
+========================================================================
+Total Network Stations: 50 Total Line Stops (46 Unique Stations)
+========================================================================
+  
