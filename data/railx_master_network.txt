@@ -1,0 +1,136 @@
+========================================================================
+                  BVDU-RAILX MASTER GRAPH DATABASE
+========================================================================
+FORMAT SPECIFICATION:
+[STATION] Station Name | IsMajorHub (1=Yes, 0=No)
+[EDGE]    Station A | Station B | Distance (km) | Time (mins) | Line ID | Service Type
+           * Line IDs     : 1 = Black, 2 = White, 3 = Grey
+           * Service Types: 1 = Slow Commuter, 2 = Fast Express, 3 = Both Modes
+========================================================================
+
+# ======================================================================
+# STATIONS DIRECTORY (50 Total Line Stops)
+# ======================================================================
+
+# Black Line Stations (Line 1)
+STATION|Pinegrove West|1
+STATION|Oakwood Terrace|0
+STATION|Willowbrook Gardens|0
+STATION|Cedarwood Village|0
+STATION|Amber Hill Heights|1
+STATION|Meadowvale Green|0
+STATION|Silver Stream|0
+STATION|Maplewood Valley|0
+STATION|Glenwood Crossing|1
+STATION|Rosewood Crest|0
+STATION|Fairway Park|0
+STATION|Sun Valley|0
+STATION|Nexus Central|1
+STATION|Harmony Heights|0
+STATION|Brookside Lane|0
+STATION|Crestview Manor|0
+STATION|Highland Park|1
+STATION|Springdale Green|0
+STATION|Cloverdale Ridge|0
+STATION|Parkview East|0
+STATION|Verdant Valley|1
+STATION|Fernwood Ridge|0
+STATION|Sunnyvale Meadows|0
+STATION|Timberland Springs|0
+STATION|Ironwood Park|1
+
+# White Line Stations (Line 2)
+STATION|Vanguard Towers|1
+STATION|Apex Plaza|0
+STATION|Silicon Heights|1
+STATION|Commerce Square|0
+STATION|Crystal District|0
+STATION|Trade Gate Plaza|0
+STATION|Horizon Trade Port|1
+
+# Grey Line Stations (Line 3)
+STATION|Titan Freight Harbor|1
+STATION|Iron Gate Depot|0
+STATION|Steel Valley Yard|1
+STATION|Summit Ridge Outpost|0
+STATION|Badland Gap|0
+STATION|Midland Junction|0
+STATION|Frontier Fortress|1
+STATION|Canyon Creek Crossing|0
+STATION|Northgate Terminus|1
+STATION|Frost Valley Reach|0
+STATION|Vanguard Citadel|1
+STATION|Outland Basin|0
+STATION|Borderland Pass|0
+STATION|Aetheria Far West|1
+
+# ======================================================================
+# TRACK CONNECTIONS & EDGES
+# ======================================================================
+
+# --- ⬛ BLACK LINE (Line 1: Local Tracks - 3 km / 5 mins) ---
+EDGE|Pinegrove West|Oakwood Terrace|3|5|1|1
+EDGE|Oakwood Terrace|Willowbrook Gardens|3|5|1|1
+EDGE|Willowbrook Gardens|Cedarwood Village|3|5|1|1
+EDGE|Cedarwood Village|Amber Hill Heights|3|5|1|1
+EDGE|Amber Hill Heights|Meadowvale Green|3|5|1|1
+EDGE|Meadowvale Green|Silver Stream|3|5|1|1
+EDGE|Silver Stream|Maplewood Valley|3|5|1|1
+EDGE|Maplewood Valley|Glenwood Crossing|3|5|1|1
+EDGE|Glenwood Crossing|Rosewood Crest|3|5|1|1
+EDGE|Rosewood Crest|Fairway Park|3|5|1|1
+EDGE|Fairway Park|Sun Valley|3|5|1|1
+EDGE|Sun Valley|Nexus Central|3|5|1|1
+EDGE|Nexus Central|Harmony Heights|3|5|1|1
+EDGE|Harmony Heights|Brookside Lane|3|5|1|1
+EDGE|Brookside Lane|Crestview Manor|3|5|1|1
+EDGE|Crestview Manor|Highland Park|3|5|1|1
+EDGE|Highland Park|Springdale Green|3|5|1|1
+EDGE|Springdale Green|Cloverdale Ridge|3|5|1|1
+EDGE|Cloverdale Ridge|Parkview East|3|5|1|1
+EDGE|Parkview East|Verdant Valley|3|5|1|1
+EDGE|Verdant Valley|Fernwood Ridge|3|5|1|1
+EDGE|Fernwood Ridge|Sunnyvale Meadows|3|5|1|1
+EDGE|Sunnyvale Meadows|Timberland Springs|3|5|1|1
+EDGE|Timberland Springs|Ironwood Park|3|5|1|1
+
+# --- ⬛ BLACK LINE (Line 1: Express Bypass Tracks - 12 km / 14 mins) ---
+EDGE|Pinegrove West|Amber Hill Heights|12|14|1|2
+EDGE|Amber Hill Heights|Glenwood Crossing|12|14|1|2
+EDGE|Glenwood Crossing|Nexus Central|12|14|1|2
+EDGE|Nexus Central|Highland Park|12|14|1|2
+EDGE|Highland Park|Verdant Valley|12|14|1|2
+EDGE|Verdant Valley|Ironwood Park|12|14|1|2
+
+# --- ⬜ WHITE LINE (Line 2: Local Tracks - 6 km / 8 mins) ---
+EDGE|Vanguard Towers|Apex Plaza|6|8|2|1
+EDGE|Apex Plaza|Silicon Heights|6|8|2|1
+EDGE|Silicon Heights|Glenwood Crossing|6|8|2|1
+EDGE|Glenwood Crossing|Commerce Square|6|8|2|1
+EDGE|Commerce Square|Nexus Central|6|8|2|1
+EDGE|Nexus Central|Crystal District|6|8|2|1
+EDGE|Crystal District|Trade Gate Plaza|6|8|2|1
+EDGE|Trade Gate Plaza|Horizon Trade Port|6|8|2|1
+
+# --- ⬜ WHITE LINE (Line 2: Express Bypass Tracks) ---
+EDGE|Vanguard Towers|Silicon Heights|12|12|2|2
+EDGE|Silicon Heights|Glenwood Crossing|6|6|2|2
+EDGE|Glenwood Crossing|Nexus Central|12|12|2|2
+EDGE|Nexus Central|Horizon Trade Port|18|18|2|2
+
+# --- 🩶 GREY LINE (Line 3: Long-Distance Freight & Express) ---
+EDGE|Titan Freight Harbor|Iron Gate Depot|200|240|3|3
+EDGE|Iron Gate Depot|Steel Valley Yard|180|210|3|3
+EDGE|Steel Valley Yard|Ironwood Park|220|260|3|3
+EDGE|Ironwood Park|Summit Ridge Outpost|190|220|3|3
+EDGE|Summit Ridge Outpost|Badland Gap|210|250|3|3
+EDGE|Badland Gap|Nexus Central|250|300|3|3
+EDGE|Nexus Central|Midland Junction|170|200|3|3
+EDGE|Midland Junction|Frontier Fortress|230|270|3|3
+EDGE|Frontier Fortress|Canyon Creek Crossing|210|250|3|3
+EDGE|Canyon Creek Crossing|Northgate Terminus|240|290|3|3
+EDGE|Northgate Terminus|Frost Valley Reach|190|230|3|3
+EDGE|Frost Valley Reach|Vanguard Citadel|260|310|3|3
+EDGE|Vanguard Citadel|Outland Basin|220|260|3|3
+EDGE|Outland Basin|Borderland Pass|200|240|3|3
+EDGE|Borderland Pass|Aetheria Far West|280|330|3|3
